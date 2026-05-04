@@ -1,8 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // Enables static export
+  basePath: '/your-repo-name', // Required if NOT a custom domain
+  images: {
+    unoptimized: true, // Next/image optimization isn't supported on static hosts
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
