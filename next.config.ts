@@ -1,10 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enables static export
-  basePath: '/your-repo-name', // Required if NOT a custom domain
+  // Enables static export
+  output: 'export', 
+  
+  // Disables the default image optimization API since there is no Node.js server
   images: {
-    unoptimized: true, // Next/image optimization isn't supported on static hosts
+    unoptimized: true,
   },
+
+  // IMPORTANT: If your repository is named something like "my-next-app" 
+  // and your URL will be "https://<username>.github.io/my-next-app/",
+  // you MUST uncomment the line below and replace 'my-next-app' with your repo name.
+  // basePath: '/my-next-app',
 };
 
-module.exports = nextConfig;
+export default nextConfig;

@@ -1,8 +1,11 @@
-import CustomPdfViewer from "../../components/CustomPdfViewer";
-export default function Home() {
+export default function Page() {
   return (
-    <main className="min-h-screen pt-32 px-4">
-      <CustomPdfViewer fileUrl="/umass_pdf.pdf"/>
-    </main>
+    <div className="fixed inset-0 h-screen w-screen bg-slate-100">
+      <iframe
+        src="/umass_pdf.pdf#toolbar=0&navpanes=0&scrollbar=0"
+        className="h-full w-full border-none"
+        title=""
+      />
+    </div>
   );
 }
