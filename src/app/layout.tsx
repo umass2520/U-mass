@@ -1,5 +1,36 @@
 import Link from "next/link";
-import "./globals.css"; // Make sure Tailwind is imported here
+import "@/app/globals.css"; // Make sure Tailwind is imported here
+
+function Footer({}) {
+  return (
+    <footer>
+      <p>
+        © Copyright {new Date().getFullYear()}{" "}
+        {/* ลิงก์ภายในเว็บตัวเอง */}
+        <Link href="/about" className="hover:underline">
+          U-MASS
+        </Link>
+        . All Rights Reserved.
+      </p>
+      <p>
+        <small className="text-sm font-medium text-slate-600 md:flex">
+          Developed By <Link href="https://ourgamedeveloper.github.io/ourgamedev/" target="_blank" className="hover:underline">
+            OurGameStudio
+          </Link>. 
+          Powered by{" "}
+          {/* ลิงก์ออกไปภายนอก */}
+          <Link href="https://github.com" target="_blank" className="hover:underline">
+            GitHub
+          </Link>
+          {" "}&{" "}
+          <Link href="https://nextjs.org" target="_blank" className="hover:underline">
+            Next.js
+          </Link>
+        </small>
+      </p>
+    </footer>
+  )
+}
 
 export default function RootLayout({
   children,

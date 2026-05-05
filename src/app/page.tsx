@@ -1,13 +1,12 @@
-import PDFViewer from "@/components/PDFViewer";
-
+import ClientPDFViewer from "@/components/ClientPDFViewer";
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       {/* You can now use this anywhere! */}
-      <PDFViewer 
-        file="/umass_pdf.pdf" 
-        maxWidth={900} 
+      <ClientPDFViewer 
+        file="/U-MASS/umass_pdf.pdf" 
+        maxWidth={1000} 
       />
     </main>
   );
