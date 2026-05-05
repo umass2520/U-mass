@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   // This tells Next.js to look for files inside your repo sub-folder
-  basePath: '/U-mass/', 
+  basePath: '/U-mass', 
 };
 
 export default nextConfig;
