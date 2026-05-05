@@ -5,7 +5,7 @@ export default function Page() {
     <main className="min-h-screen bg-white">
       {/* You can now use this anywhere! */}
       <ClientPDFViewer 
-        file="/U-MASS/umass_pdf.pdf" 
+        file="/U-mass/umass_pdf.pdf" 
         maxWidth={1000} 
       />
     </main>
