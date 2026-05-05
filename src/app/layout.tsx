@@ -10,10 +10,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-slate-50 antialiased">
         <div className="fixed top-6 left-1/2 z-50 w-[95%] max-w-4xl -translate-x-1/2">
-          <nav className="flex items-center justify-between rounded-full border border-white/20 bg-white/90 px-6 py-2.5 shadow-lg backdrop-blur-md transition-all hover:shadow-xl">
-            <h1 className="text-xl font-bold tracking-tighter text-red-800">
-              Umass
-            </h1>
+          <nav className="opacity-75 flex items-center justify-between rounded-full border border-white/20 bg-white/90 px-6 py-2.5 shadow-lg backdrop-blur-md transition-all hover:shadow-xl">
+            <img src="/logo_png.png" alt="Logo" className=" h-7"/>
             <ul className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
               <li className="inline-block scale-125">
                 Company Profile
